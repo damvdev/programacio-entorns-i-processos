@@ -1,7 +1,7 @@
 # GIT
 GIT és un sistema que permet realitzar la gestió de les versions del codi que els desenvolupadors realitzen d’una manera que permet controlar-ne l’evolució i permet el treball col·laboratiu entre els desenvolupadors.
 Habitualment es treballa amb repositoris de codi que són el punt central on s’emmagatzema el codi i està disponible per a tots els desenvolupadors involucrats en un projecte.
-Github és un servei web que proporciona repositoris de forma online, per tant accessible des de qualsevol ordinador amb connectivitat a Internet, que permet la gestió dels repositoris i el treball dels diferents desenvolupadors en un projecte.
+GitHub és un servei web que proporciona repositoris de forma online, per tant accessible des de qualsevol ordinador amb connectivitat a Internet, que permet la gestió dels repositoris i el treball dels diferents desenvolupadors en un projecte.
 
 Git treballa en dos servidors: el local i el remot.
 * Local: Es la còpia que es manté a l’ordinador i que no es sincronitza amb el remot fins que s’executen les comandes corresponents.
