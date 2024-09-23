@@ -11,9 +11,8 @@ Amb les comandes git remote es permet veure i configurar els paràmetres del rep
 
 ## Control de versions en local (GIT). Operacions bàsiques
 
-Per crear un repositori, cal que el directori sigui inicialitzat. Des de la terminal, situats dins del directori, executarem la comanda *git init*:
+Per crear un repositori, cal que el directori sigui inicialitzat. Des de la terminal, situats dins del directori ja creat, executarem la comanda *git init*:
 ```
-md firsttheme
 git init
 ```
 <img src="https://github.com/damvdev/programacio-entorns-i-processos/blob/main/tema_0/images/git_init.jpg">
