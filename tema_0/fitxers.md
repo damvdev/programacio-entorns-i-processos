@@ -4,7 +4,7 @@ Un **fitxer** és un recurs informàtic que s’utilitza per a registrar dades d
 
 Hi ha diferents tipus d'arxius informàtics, dissenyats per a diferents propòsits. Un arxiu pot estar dissenyat per a emmagatzemar una imatge, un missatge escrit, un vídeo, un programa d'ordinador o una àmplia varietat d'altres tipus de dades. Alguns tipus d'arxius poden emmagatzemar diversos tipus d'informació alhora. En la majoria de sistemes operatius moderns, els fitxers són organitzats en arrays unidimensionals de bytes. El format d'un arxiu es defineix pel seu contingut, ja que un arxiu és únicament un contenidor de dades, tot i que en alguns programes el format és indicat per l’extensió del fitxer, especificant les regles de com han d'organitzar-se i interpretar-se els bytes de manera significativa. Per exemple, els bytes d'un fitxer de text senzill (.txt en Windows) és associat amb qualsevol ASCII o UTF-8 caràcters, mentre els bytes d'imatge, vídeo, i fitxers d'àudio són interpretats d’una altra manera. La majoria dels tipus d'arxiu també assignen uns pocs bytes per a les metadades, la qual cosa permet que un arxiu porti alguna informació bàsica sobre si mateix.
 
-Exemples de tipus d’extensions: .txt, jpg, .docx, .c, .py, .java,...
+Exemples de tipus d’extensions tenim: .txt, jpg, .docx, .c, .py, .java,...
 
 Mitjançant l'ús de programes informàtics, una persona pot obrir, llegir, canviar, guardar i tancar un arxiu informàtic. Els arxius poden ser oberts, modificats i copiats un nombre arbitrari de vegades. Les operacions més bàsiques que els programes poden realitzar en un arxiu són:
 * Crear un nou arxiu
