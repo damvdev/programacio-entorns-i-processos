@@ -7,7 +7,7 @@ Disposem d'una màquina senzilla que pot executar 4 operacions:
 - Compara dos números naturals (operació CMP)
 - Salta si dos números son iguals (operació BEQ)
 
-<img src="https://github.com/raquel-alaman/entorns-programacio-i-processos/blob/main/tema_1/images/maquina-ordinador.jpg" width="300" height="300">
+<img src="https://github.com/damvdev/programacio-entorns-i-processos/blob/main/tema_1/images/maquina-ordinador.jpg" width="300" height="300">
 
 Cada una d'aquestes operacions té assignat un codi de bits que la identifica:
 
@@ -25,7 +25,7 @@ Una instrucció conté 16 bits que identifica l'operació i els operands implica
 
 Cada posició de memòria conté diferents valors. En aquest cas, la màquina disposa d'una memòria RAM de 128 bits, on el rang [0-127] i es fan servir 7 bits per codificar cada adreça de memòria.
 
-<img src="https://github.com/raquel-alaman/entorns-programacio-i-processos/blob/main/tema_1/images/direccions-ram.jpg" width="250" height="400">
+<img src="https://github.com/damvdev/programacio-entorns-i-processos/blob/main/tema_1/images/direccions-ram.jpg" width="250" height="400">
 
 Si tenim la següent instrucció en llenguatge màquina:
 ```sh
@@ -46,7 +46,7 @@ De manera que en aquesta posició de memòria, la instrucció emmagatzemada indi
 
 ### Com passem de LAN a llenguatge màquina?
 
-<img src="https://github.com/raquel-alaman/entorns-programacio-i-processos/blob/main/tema_1/images/LAN-maquina.jpg" width="250" height="400">
+<img src="https://github.com/damvdev/programacio-entorns-i-processos/blob/main/tema_1/images/LAN-maquina.jpg" width="250" height="400">
 
 A continuació estudiarem diferents exemples de codificació d'un algorisme en llenguatge ensamblador, seguint les especificacions de la màquina senzilla d'exemple:
 
