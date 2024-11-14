@@ -6,6 +6,7 @@ namespace Projects
 	{
 		public const string MsgKeyFound = "L'element es troba a la posició: {0}";
 		public const string MsgKeyNotFound = "L'element no s'ha trobat.";
+		
 		public static int BinarySearch(int[] arr, int first, int last, int key)
 		{
 			if (last >= first)
