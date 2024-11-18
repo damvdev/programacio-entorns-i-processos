@@ -26,7 +26,7 @@ namespace ExerciseFive
             return age % 2 == 0;
         }
 
-        public (bool IsShort, bool 	IsPalindrome) NameAnalyser(string name)
+        public (bool IsShort, bool IsPalindrome) NameAnalyser(string name)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -35,9 +35,9 @@ namespace ExerciseFive
 
             bool IsShort = name.Length < 5;
             string reversedName = new string(name.ToCharArray().Reverse().ToArray());
-            bool IsPalindrome = nom.Equals(reversedName, StringComparison.OrdinalIgnoreCase);
+            bool IsPalindrome = name.Equals(reversedName, StringComparison.OrdinalIgnoreCase);
 
-            return (IsShort, esPalindrom);
+            return (IsShort, IsPalindrome);
         }
 
         public int VerifyColour(string colour)
