@@ -1,0 +1,15 @@
+flowchart TD
+    A["Inici"] --> B["Selecciona un avatar (1-4)"]
+    B -->|Avatar vàlid| C["Escriu un nom (2-25 caràcters, sense caràcters especials)"]
+    B -->|Avatar no vàlid| B
+    C -->|Nom vàlid| D["Indica nivell de maldat (1000-50000)"]
+    C -->|Nom no vàlid| C
+    D -->|Nivell vàlid| E["Comprova si el nom té com a mínim 2 vocals"]
+    D -->|Nivell no vàlid| D
+    E -->|Sí| F["Pols màgica = maldat"]
+    E -->|No| G["Pols màgica = maldat * 0.05"]
+    F --> H["Repartiment = pols màgica / 4"]
+    G --> H
+    H --> I["Maldat restant = maldat - pols màgica"]
+    I --> J["Mostra resultats"]
+    J --> K["Fi"]
