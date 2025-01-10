@@ -1,3 +1,7 @@
+/* Ex1. Implementa un programa en C# que rebi un 
+* nombre enter per teclat i retorni si aquest està 
+  entre el 5 i el 100 (no inclosos) i no és senar */
+
 using System;
 
 public class Program
