@@ -1,6 +1,9 @@
-/* Ex2. Implementa un programa en C# que mostri 
-* per pantalla el més gran de tres 
-* números introduïts per teclat */
+/* 
+ * Ex2. Implementa un programa en C# que mostri 
+ * per pantalla el més gran de tres 
+ * números introduïts per teclat
+ */
+
 using System;
 
 public class Program
