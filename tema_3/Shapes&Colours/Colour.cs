@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace exemples
 {
@@ -34,22 +34,38 @@ namespace exemples
 
         public static int GetCount() => _count;
 
-        public string GetInfo() { 
-            return $"Name: {Name}, RGB: ({Red}, {Green}, {Blue})";
-        }
-        public string GetInfoRGB(bool upper)
-        {
-            return upper ? $"RGB: ({Red}, {Green}, {Blue})" : $"rgb: ({Red}, {Green}, {Blue})";
-        }
-
         public string ToRGB(bool upper) {
             return (upper ? "RGB" : "rgb" ) + $"({Red}, {Green}, {Blue})";
         }
 
         public string ToRGB() => ToRGB(false);
+        
+        public string ToHex()
+        {
+            return $"#{MyMath.DecimalToHex(Red)}{MyMath.DecimalToHex(Green)}{MyMath.DecimalToHex(Blue)}";
+        }
 
         public static Colour Random() { 
             return new Colour(MyMath.NextInt(MaxValue), MyMath.NextInt(MaxValue), MyMath.NextInt(MaxValue));
-        }        
+        }
+
+        public override bool Equals(object? obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+            Colour c = (Colour)obj;
+            return Red == c.Red && Green == c.Green && Blue == c.Blue;
+        }
+        public override int GetHashCode() => (Red, Green, Blue).GetHashCode();
+
+        public override string ToString()
+        {
+            return $"Name: {Name}, RGB: ({Red}, {Green}, {Blue})";
+        }
+
+        public string GetInfoRGB(bool upper)
+        {
+            return upper ? $"RGB: ({Red}, {Green}, {Blue})" : $"rgb: ({Red}, {Green}, {Blue})";
+        }
     }
 }
