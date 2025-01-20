@@ -4,7 +4,8 @@ namespace exemples
 {
     public class Circle : Shape2D
     {
-        
+
+        private double _radius;
         public Circle(double radius, Colour baseColour) : base(baseColour)
         {
             Radius = radius;
@@ -12,14 +13,14 @@ namespace exemples
 
         public double Radius
         {
-            get => default;
+            get => _radius;
             set
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Radius must be greater than 0");
+                    throw new ArgumentException("Radius must be greater than 0");
                 }
-                this.Radius = value;
+                _radius = value;
             }
         }
 
