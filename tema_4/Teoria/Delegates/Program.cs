@@ -1,18 +1,27 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Text;
-using System.Threading.Channels;
 
 namespace colleccions
 {
     public class Program
     {
         public delegate void MyDelegate(int a, int b);
+        public delegate int Operacio(int a, int b);
+        public delegate void Notificacio(string missatge);
 
         public static void Sumar(int a, int b) { Console.WriteLine(a + b); }
         public static void Restar(int a, int b) { Console.WriteLine(a - b); }
 
+        public static int Resta(int a, int b) { return a - b; }
+
         public static void MostrarMissatge(string missatge) => Console.WriteLine(missatge);
+        public static int ExecutarOperacio(int a, int b, Operacio ops) => ops(a, b);
+
+        public static void ExecutarAmbMetodeAnonim(Notificacio notificacio) {
+            notificacio("Això és un mètode anònim!");
+        }
+    
 
         public static void Main()
         {
@@ -61,6 +70,15 @@ namespace colleccions
 
             Action saluda = () => Console.WriteLine("Hola gent!");
             saluda();
+
+            Console.WriteLine(ExecutarOperacio(10, 5, Resta));
+
+            ExecutarAmbMetodeAnonim(delegate (string missatge)
+            {
+                Console.WriteLine($"[Missatge]: {missatge}");
+
+            }
+            );
         }
     }
 }
