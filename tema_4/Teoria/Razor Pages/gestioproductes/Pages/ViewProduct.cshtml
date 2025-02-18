@@ -1,0 +1,29 @@
+﻿@page
+@model gestioproductes.Pages.ViewProductModel
+@{
+	ViewData["Title"] = "Llistat de productes";
+}
+
+<h2>Llistat de productes</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Nom</th>
+			<th>Quantitat</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var product in Model.Products)
+		{
+			<tr>
+				<td>@product.ID</td>
+				<td>@product.Name</td>
+				<td>@product.Amount</td>
+			</tr>	
+		}
+	</tbody>
+</table>
+
+<a asp-page="AddProduct" class="btn btn-primary">Afegir nou producte</a>

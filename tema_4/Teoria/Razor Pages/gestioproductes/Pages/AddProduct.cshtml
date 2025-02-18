@@ -1,0 +1,29 @@
+﻿@page
+@model gestioproductes.Pages.AddProductModel
+@{
+	ViewData["Title"] = "Afegir producte";
+}
+
+<h2>Afegir producte</h2>
+<form method="post">
+	<div class="form-group">
+		<label asp-for="Product.ID"></label>
+		<input asp-for="Product.ID" class="form-control" />
+		<span asp-validation-for="Product.ID" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Name"></label>
+		<input asp-for="Product.Name" class="form-control" />
+		<span asp-validation-for="Product.Name" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Amount"></label>
+		<input asp-for="Product.Amount" class="form-control" />
+		<span asp-validation-for="Product.Amount" class="text-danger"></span>
+	</div>
+	<button type="submit" class="btn btn-primary">Afegir</button> 
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
