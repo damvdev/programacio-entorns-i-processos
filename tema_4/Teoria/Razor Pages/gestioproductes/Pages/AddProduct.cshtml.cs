@@ -19,13 +19,13 @@ namespace gestioproductes.Pages
             }
 
             if (Product.ID.ToString().Length > 8) {
-                ModelState.AddModelError("Product.ID","L'ID ha de tenir com a m‡xim 8 xifres");
+                ModelState.AddModelError("Product.ID","L'ID ha de tenir com a m√†xim 8 xifres");
                 return Page();
             }
             string filePath = "products.txt";
             string productLine = $"{Product.ID},{Product.Name},{Product.Amount}";
 
-            System.IO.File.AppendAllText(filePath, productLine);
+            System.IO.File.AppendAllText(filePath, productLine + Environment.NewLine);
 
             return RedirectToPage("ViewProduct");
         }
