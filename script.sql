@@ -1,0 +1,12 @@
+CREATE DATABASE SchoolDB;
+
+USE SchoolDB;
+GO
+
+CREATE TABLE Contact (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) NULL,
+    Surname NVARCHAR(100) NULL
+);
+
+SELECT * FROM Contact;
