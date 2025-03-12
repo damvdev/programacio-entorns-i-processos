@@ -384,34 +384,6 @@ class Program
             Console.WriteLine($"{item.Caracter}: {item.Freq}");
         }
     }
-}using System;
-using System.Collections.Generic;
-using System.Linq;
-public class Program
-{
-    public static void Main()
-    {
-        List<string> llenguatges = new List<string> { "C#", "Java", "Python", "JavaScript", "C++" };
-        
-        // Llenguatges amb més de 3 caràcters
-        var llargs = llenguatges.Where(l => l.Length > 3);
-        Console.WriteLine("Llenguatges amb més de 3 caràcters:");
-        foreach (var llenguatge in llargs)
-        {
-            Console.WriteLine(llenguatge);
-        }
-
-        // Freqüència de caràcters
-        var freqCaracters = llenguatges.SelectMany(l => l)
-                                      .GroupBy(c => c)
-                                      .Select(g => new { Caracter = g.Key, Freq = g.Count() });
-        
-        Console.WriteLine("\nFreqüència de caràcters:");
-        foreach (var item in freqCaracters)
-        {
-            Console.WriteLine($"{item.Caracter}: {item.Freq}");
-        }
-    }
 }
 /************************* Ex.16 ************************************/
 using System;
